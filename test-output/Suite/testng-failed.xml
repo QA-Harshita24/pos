@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <test thread-count="5" parallel="tests" name="TestQA(failed)">
+    <parameter name="property" value="config.properties"/>
+    <classes>
+      <class name="script.Demo2">
+        <methods>
+          <include name="postCondition"/>
+          <include name="initReport"/>
+          <include name="generateReport"/>
+          <include name="preCondition"/>
+          <include name="testB"/>
+        </methods>
+      </class> <!-- script.Demo2 -->
+      <class name="script.Demo3">
+        <methods>
+          <include name="postCondition"/>
+          <include name="initReport"/>
+          <include name="generateReport"/>
+          <include name="preCondition"/>
+          <include name="testC"/>
+        </methods>
+      </class> <!-- script.Demo3 -->
+      <class name="script.Demo1">
+        <methods>
+          <include name="postCondition"/>
+          <include name="initReport"/>
+          <include name="generateReport"/>
+          <include name="testA"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- script.Demo1 -->
+    </classes>
+  </test> <!-- TestQA(failed) -->
+</suite> <!-- Failed suite [Suite] -->
