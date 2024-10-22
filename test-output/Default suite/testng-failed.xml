@@ -3,12 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="script.DemoY">
+      <class name="script.ValidLogin">
         <methods>
-          <include name="am"/>
-          <include name="deleteUser"/>
+          <include name="postCondition"/>
+          <include name="initReport"/>
+          <include name="generateReport"/>
+          <include name="preCondition"/>
+          <include name="testValidLogin"/>
         </methods>
-      </class> <!-- script.DemoY -->
+      </class> <!-- script.ValidLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
